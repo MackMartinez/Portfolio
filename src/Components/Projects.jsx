@@ -6,7 +6,7 @@ const Projects = () => {
   const projectData = ["HabitTracker","Jungle","Food-Pickup"]; 
 
   return (
-    <Grid2 container={true} justifyContent={"center"} id="Projects">
+    <Grid2 container={true} justifyContent={"center"} id="Projects" pt={50}>
       {projectData.map((item, index) => (
         <div key={index}>{item}</div>
       ))}

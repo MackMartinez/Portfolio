@@ -36,7 +36,7 @@ const ContactMe = () => {
 
   // console.log(watch("example")); // watch input value by passing the name of it
   return (
-    <Grid2 container={true} justifyContent={"center"} id="Contact">
+    <Grid2 container={true} justifyContent={"center"} id="Contact" pt={50} pb={50}>
       <Box>
         <Typography>Contact</Typography>
         <Typography>

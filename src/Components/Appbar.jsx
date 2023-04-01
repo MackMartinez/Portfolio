@@ -71,14 +71,14 @@ export default function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
-              <Link smooth to={`/#${item}`} key={item} sx={{marginRight:10}} >
-                {item}
-              </Link>
+            <Link smooth to={`/#${item}`} offset={100} key={item} sx={{marginRight:10}} >
+            {item}
+            </Link>
             ))}
           </Box>
         </Toolbar>
       </AppBar>
-      <Box component="nav">
+      {/* <Box component="nav">
         <Drawer
           container={container}
           variant="temporary"
@@ -97,7 +97,7 @@ export default function DrawerAppBar(props) {
         >
           {drawer}
         </Drawer>
-      </Box>
+      </Box> */}
       <Box component="main" sx={{ p: 3 }}>
         <Toolbar />
       </Box>

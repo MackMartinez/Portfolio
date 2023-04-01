@@ -9,8 +9,8 @@ const Landing = () => {
     <Grid2 container={true} justifyContent={"center"} id="Home">
       <Box
         sx={{
-          pt: 40,
-          pb: 80,
+          pt: 45,
+          pb: 70,
         }}
       >
         <Typography variant="h1">Macky Martinez</Typography>
