@@ -16,8 +16,8 @@ function App() {
         <DrawerAppBar />
           <Container sx={{ justifyContent: 'space-between', marginLeft:50}}>
             <Landing />
-            <Projects />
             <Skills />
+            <Projects />
             <ContactMe />
           </Container>
       </Box>
