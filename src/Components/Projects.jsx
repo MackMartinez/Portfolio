@@ -1,15 +1,16 @@
 import React from 'react';
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const Projects = () => {
 
-  const projectData = [1,2,3,4]; 
+  const projectData = ["HabitTracker","Jungle","Food-Pickup"]; 
 
   return (
-    <div>
+    <Grid2 container={true} justifyContent={"center"}>
       {projectData.map((item) =>(
-        <div>item</div>
+        <div>{item}</div>
       ))}
-    </div>
+    </Grid2>
   );
 }
 
