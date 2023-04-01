@@ -12,10 +12,9 @@ import {
   ListItemText,
   Toolbar,
   Typography,
-  Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { HashLink as Link} from "react-router-hash-link";
+import { HashLink as Link } from "react-router-hash-link";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
@@ -70,9 +69,9 @@ export default function DrawerAppBar(props) {
           >
             [Insert icon]
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
-              <Link smooth to={`/#${item}`} key={item} sx={{ color: "#fff" }}>
+              <Link smooth to={`/#${item}`} key={item} sx={{marginRight:10}} >
                 {item}
               </Link>
             ))}
