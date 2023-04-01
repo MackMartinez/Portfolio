@@ -7,8 +7,8 @@ const Projects = () => {
 
   return (
     <Grid2 container={true} justifyContent={"center"}>
-      {projectData.map((item) =>(
-        <div>{item}</div>
+      {projectData.map((item, index) =>(
+        <div key={index}>{item}</div>
       ))}
     </Grid2>
   );
