@@ -7,8 +7,10 @@ import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import Skills from "./Components/Skills";
 
+
 function App() {
   return (
+    <BrowserRouter>
     <Box>
       <DrawerAppBar />
         <Container sx={{ justifyContent: 'space-between', marginLeft:50}}>
@@ -18,6 +20,7 @@ function App() {
           <ContactMe />
         </Container>
     </Box>
+    </BrowserRouter>
   );
 }
 
