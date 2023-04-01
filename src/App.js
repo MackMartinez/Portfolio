@@ -14,7 +14,7 @@ function App() {
         <Container sx={{ justifyContent: 'space-between', marginLeft:50}}>
           <Landing />
           <Projects />
-          {/* <Skills /> */}
+          <Skills />
           <ContactMe />
         </Container>
     </Box>
