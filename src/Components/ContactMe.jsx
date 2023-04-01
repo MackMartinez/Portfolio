@@ -16,7 +16,7 @@ const ContactMe = () => {
     {/* "handleSubmit" will validate your inputs before invoking "onSubmit" */}
     <form onSubmit={handleSubmit(onSubmit)}>
       <Typography>Name</Typography>
-      <input {...register("name")} />
+      <input {...register("name"), { required: true}} />
       
       <Typography>Email</Typography>
       {/* include validation with required or other standard HTML validation rules */}
