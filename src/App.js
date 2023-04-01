@@ -6,20 +6,21 @@ import Landing from "./Components/Landing";
 import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import Skills from "./Components/Skills";
+import { BrowserRouter } from "react-router-dom";
 
 
 function App() {
   return (
     <BrowserRouter>
-    <Box>
-      <DrawerAppBar />
-        <Container sx={{ justifyContent: 'space-between', marginLeft:50}}>
-          <Landing />
-          <Projects />
-          <Skills />
-          <ContactMe />
-        </Container>
-    </Box>
+      <Box>
+        <DrawerAppBar />
+          <Container sx={{ justifyContent: 'space-between', marginLeft:50}}>
+            <Landing />
+            <Projects />
+            <Skills />
+            <ContactMe />
+          </Container>
+      </Box>
     </BrowserRouter>
   );
 }

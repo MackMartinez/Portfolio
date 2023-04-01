@@ -30,6 +30,7 @@ export default function Skills() {
       justifyContent={"space-between"}
       marginTop={100}
       marginBottom={100}
+      id="Skills"
     >
       <Grid2 container={true} direction={"column"} justifyContent={"center"}>
         <Typography variant="h4">Front End</Typography>

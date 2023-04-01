@@ -15,6 +15,7 @@ import {
   Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { HashLink as Link} from "react-router-hash-link";
 
 const drawerWidth = 240;
 const navItems = ["Home", "About", "Skills", "Projects", "Contact"];
@@ -71,9 +72,9 @@ export default function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
+              <Link smooth to={`/#${item}`} key={item} sx={{ color: "#fff" }}>
                 {item}
-              </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
