@@ -2,9 +2,12 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 const Landing = () => {
   return (
+    <Grid2 container={true} justifyContent={"center"} id="Home">
+
     <Box sx={{
       pt:40,
       pb:80
@@ -20,6 +23,7 @@ const Landing = () => {
       </Stack>
       </Box>
     </Box>
+      </Grid2>
   );
 };
 
