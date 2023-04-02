@@ -1,6 +1,6 @@
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import HabtrackLanding from '../Images/HabtrackLanding.JPG'
+import HabtrackLanding from "../Images/HabtrackLanding.jpg"
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
