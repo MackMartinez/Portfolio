@@ -10,7 +10,7 @@ const Landing = () => {
       <Box
         sx={{
           pt: 45,
-          pb: 70,
+          pb: 40,
         }}
       >
         <Typography variant="h1">Macky Martinez</Typography>

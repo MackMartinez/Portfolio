@@ -1,6 +1,5 @@
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-// import HabtrackLanding from "../Images/HabtrackLanding";
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -14,7 +13,7 @@ const Projects = () => {
   const projectData = [
     {
       name: "HabTrack",
-      img: "https://github.com/MackMartinez/Portfolio/tree/feature/project-cards/src/Images",
+      img: "https://github.com/MackMartinez/Portfolio/blob/main/src/Images/HabtrackLanding.jpg?raw=true",
       description:
         "A habit tracking application that helps you monitor your progress towards developinga nd mainting positive habits. This was a collaborative full stack project with full CRUD capabilities. ",
     },
@@ -27,14 +26,14 @@ const Projects = () => {
   ];
 
   return (
-    <Grid2 container={true} justifyContent={"space-between"} id="Projects" pt={50}>
+    <Grid2 container={true} justifyContent="space-between" spacing={10} id="Projects" pt={50}>
       {projectData.map((item, index) => (
-        <Card key={index} sx={{ maxWidth: 345 }}>
+        <Card key={index} sx={{ maxWidth: 600, maxHeight:450, mb:10 }}>
         <CardMedia
           component="img"
           alt={item.img}
           height="200"
-          src="https://github.com/MackMartinez/Portfolio/blob/feature/project-cards/src/Images/HabtrackLanding.jpg"
+          src={item.img}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
