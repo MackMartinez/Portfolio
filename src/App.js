@@ -7,6 +7,7 @@ import Projects from "./Components/Projects";
 import ContactMe from "./Components/ContactMe";
 import Skills from "./Components/Skills";
 import { BrowserRouter } from "react-router-dom";
+import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 
 
 function App() {
@@ -14,8 +15,10 @@ function App() {
     <BrowserRouter>
       <Box>
         <DrawerAppBar />
-          <Container sx={{ justifyContent: 'space-between', marginLeft:50}}>
+          <Container maxWidth="md" sx={{ justifyContent: 'space-between', marginLeft:50}}>
             <Landing />
+          </Container>
+          <Container maxWidth="1" sx={{ justifyContent: 'space-between'}}>
             <Skills />
             <Projects />
             <ContactMe />
