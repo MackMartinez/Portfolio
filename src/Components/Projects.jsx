@@ -17,12 +17,12 @@ const Projects = () => {
       description:
         "A habit tracking application that helps you monitor your progress towards developinga nd mainting positive habits. This was a collaborative full stack project with full CRUD capabilities. ",
     },
-    { name: "Scheduler",
-      img: "test",
-      description: "React based project to create meetings for students to connect with mentors in real-time."},
+    { name: "Jungle",
+      img: "https://github.com/MackMartinez/Portfolio/blob/fix/project-card-size/src/Images/Jungle.JPG?raw=true",
+      description: "A plant shop built with Ruby and Ruby on Rails. Whether you're an experienced plant parent or a first-time plant owner, this shop has everything you need. Utilizing the Stripe API, you can purchase any of the items in the store"},
     { name: "Food-Pickup",
-    img: "test",
-    description: "Collaborative full stack project to simulate a restaurant ordering system for a customer to preorder and pickup their food. "},
+    img: "https://github.com/MackMartinez/Portfolio/blob/fix/project-card-size/src/Images/FoodPickUp.JPG?raw=true",
+    description: "A collaborative full stack project for the busy food lover. The customer can order items and utilizing twilio API the restaurant will receive a request to confirm the order time. Based on the response, the customer will receive a text notification indicating the time until the order is ready."},
   ];
 
   return (
