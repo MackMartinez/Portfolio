@@ -28,11 +28,11 @@ const Projects = () => {
   return (
     <Grid2 container={true} justifyContent="space-between" spacing={10} id="Projects" pt={50} pb={30}>
       {projectData.map((item, index) => (
-        <Card key={index} sx={{ maxWidth: 600, maxHeight:450, mb:10 }}>
+        <Card key={index} sx={{ maxWidth: 600, maxHeight:450, mb:10 , minHeight:600}}>
         <CardMedia
           component="img"
           alt={item.img}
-          height="200"
+          height="400"
           src={item.img}
         />
         <CardContent>
