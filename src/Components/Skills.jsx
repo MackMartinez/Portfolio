@@ -28,7 +28,7 @@ export default function Skills() {
       container={true}
       direction={"row"}
       justifyContent={"space-between"}
-      pt={20}
+      pt={50}
       id="Skills"
     >
       <Grid2 container={true} direction={"column"} justifyContent={"center"}>
