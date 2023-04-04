@@ -7,8 +7,8 @@ import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 const Landing = () => {
   return (
     <Grid2 container={true} justifyContent={"center"} id="Home" sx={{
-      pt: 45,
-      pb: 70,
+      pt: 65,
+      pb: 60,
     }}>
         <Typography variant="h1">Macky Martinez</Typography>
         <Typography variant="h3">Full-Stack Software Developer</Typography>
