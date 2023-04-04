@@ -21,7 +21,7 @@ const Projects = () => {
     {
       name: "Jungle",
       img: "https://github.com/MackMartinez/Portfolio/blob/fix/project-card-size/src/Images/Jungle.JPG?raw=true",
-      github:"https://github.com/MackMartinez/jungle-rails",
+      github: "https://github.com/MackMartinez/jungle-rails",
       description:
         "A plant shop built with Ruby and Ruby on Rails. Whether you're an experienced plant parent or a first-time plant owner, this shop has everything you need. Utilizing the Stripe API, you can purchase any of the items in the store",
     },
@@ -35,53 +35,56 @@ const Projects = () => {
   ];
 
   return (
-    <Grid2
-      container={true}
-      id="Projects"
-      justifyContent="space-between"
-      spacing={10}
-      pt={50}
-      pb={30}
-    >
-      {projectData.map((item, index) => (
-        <Card
-          key={index}
-          sx={{
-            maxWidth: 600,
-            maxHeight: 450,
-            mb: 10,
-            minHeight: 600,
-            transform: 'scale(1)',
-            transition: 'transform 0.3s ease-in-out',
-            '&:hover': {
-              transform: 'scale(1.2)'
-            }
-          }}
-        >
-          <CardMedia
-            component="img"
-            alt={item.img}
-            height="400"
-            src={item.img}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.name}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {item.description}
-            </Typography>
-          </CardContent>
-          <CardActions>
-          <a href={item.github} target='_blank' rel='noopener noreferrer'>
-            <Button size="small">
-              <GitHubIcon />
-            </Button>
-            </a>
-          </CardActions>
-        </Card>
-      ))}
-    </Grid2>
+      <Grid2
+        container={true}
+        id="Projects"
+        justifyContent="space-between"
+        spacing={10}
+        pt={40}
+        pb={30}
+      >
+        <div>
+          <Typography variant="h1">PROJECTS</Typography>
+        </div>
+        {projectData.map((item, index) => (
+          <Card
+            key={index}
+            sx={{
+              maxWidth: 600,
+              maxHeight: 450,
+              mb: 10,
+              minHeight: 600,
+              transform: "scale(1)",
+              transition: "transform 0.3s ease-in-out",
+              "&:hover": {
+                transform: "scale(1.2)",
+              },
+            }}
+          >
+            <CardMedia
+              component="img"
+              alt={item.img}
+              height="400"
+              src={item.img}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {item.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {item.description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <a href={item.github} target="_blank" rel="noopener noreferrer">
+                <Button size="small">
+                  <GitHubIcon />
+                </Button>
+              </a>
+            </CardActions>
+          </Card>
+        ))}
+      </Grid2>
   );
 };
 
