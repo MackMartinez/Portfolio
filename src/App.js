@@ -18,13 +18,10 @@ function App() {
             <Landing />
           </Container>
           <Grid container={true} direction={"column"} justifyContent={"center"} pl={40} pr={40}>
-
             <Skills />
             <Projects />
             <ContactMe />
           </Grid>
-          {/* <Container sx={{ justifyContent: 'space-between', backgroundColor: "red"}}> */}
-          {/* </Container> */}
       </Box>
     </BrowserRouter>
   );
