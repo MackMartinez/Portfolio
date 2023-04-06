@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import "@fontsource/roboto/400.css";
-import ReactTypingEffect from "react-typing-effect";
 import TypeWriterEffect from "react-typewriter-effect";
 
 const Landing = () => {

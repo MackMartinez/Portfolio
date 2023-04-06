@@ -51,7 +51,7 @@ export default function DrawerAppBar(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: 'inherit' }}>
+      <AppBar component="nav" sx={{ backgroundColor: "transparent", boxShadow: "0" }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,9 +71,11 @@ export default function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
-            <Link smooth to={`/#${item}`} offset={100} key={item} sx={{marginRight:10}} >
-            {item}
-            </Link>
+              <Link smooth to={`/#${item}`} offset={100} key={item}>
+                <Typography sx={{ marginRight: 5, color: "#A1E2FF", fontWeight: "700", fontSize:"20px" }}>
+                  {item}
+                </Typography>
+              </Link>
             ))}
           </Box>
         </Toolbar>
