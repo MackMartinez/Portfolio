@@ -72,7 +72,7 @@ export default function DrawerAppBar(props) {
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
               <Link smooth to={`/#${item}`} offset={100} key={item}>
-                <Typography sx={{ marginRight: 5, color: "#A1E2FF", fontWeight: "700", fontSize:"20px" }}>
+                <Typography sx={{ marginRight: 5, color: "#2a9d8f", fontWeight: "700", fontSize:"20px" }}>
                   {item}
                 </Typography>
               </Link>
