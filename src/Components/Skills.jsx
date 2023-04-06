@@ -35,8 +35,7 @@ export default function Skills() {
       container={true}
       direction={"row"}
       justifyContent={"space-between"}
-      pt={50}
-      pb={70}
+      pt={20}
       id="Skills"
     >
       <Typography variant="h1">Skills</Typography>
