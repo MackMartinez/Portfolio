@@ -12,17 +12,19 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Box>
+      <Box sx={{backgroundImage: "url(https://github.com/MackMartinez/Portfolio/blob/main/src/Images/DeveloperBGLanding.jpg?raw=true)",
+      backgroundSize: "cover",backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'center'}}>
         <DrawerAppBar />
-          <Container maxWidth="md" sx={{marginLeft:50}}>
+          <Container maxWidth="md" sx={{marginLeft:50, }}>
             <Landing />
           </Container>
+      </Box>
           <Grid container={true} direction={"column"} justifyContent={"center"} pl={40} pr={40}>
             <Skills />
             <Projects />
             <ContactMe />
           </Grid>
-      </Box>
     </BrowserRouter>
   );
 }
