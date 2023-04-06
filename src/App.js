@@ -16,7 +16,7 @@ function App() {
       backgroundSize: "cover",backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center'}}>
         <DrawerAppBar />
-          <Container maxWidth="md" sx={{marginLeft:50, }}>
+          <Container maxWidth="md" sx={{marginLeft:50}}>
             <Landing />
           </Container>
       </Box>
