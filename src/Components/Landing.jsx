@@ -18,13 +18,13 @@ const Landing = () => {
         pb: 60,
       }}
     >
-      <Typography variant="h1" sx={{ color: "#A1E2FF" }}>
+      <Typography variant="h1" sx={{ color: "#2a9d8f" }}>
         Macky Martinez
       </Typography>
       <TypeWriterEffect
-        textStyle={{ fontFamily: "roboto", color: "#A1E2FF" }}
+        textStyle={{ fontFamily: "roboto", color: "#2a9d8f" }}
         startDelay={200}
-        cursorColor="#A1E2FF"
+        cursorColor="#2a9d8f"
         multiText={[
           ' Full Stack Web Developer']}
         typeSpeed={130}
@@ -34,13 +34,13 @@ const Landing = () => {
 
       <Box sx={{ pt: 4 }}>
         <Stack direction="row" spacing={2}>
-          <Button variant="contained" sx={{ backgroundColor: "#A1E2FF" }}>
+          <Button variant="contained" sx={{ backgroundColor: "#2a9d8f" }}>
             About Me
           </Button>
           <Button
             variant="contained"
             href="#outlined-buttons"
-            sx={{ backgroundColor: "#A1E2FF" }}
+            sx={{ backgroundColor: "#2a9d8f" }}
           >
             Contact Me
           </Button>
