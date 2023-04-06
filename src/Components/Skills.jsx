@@ -1,27 +1,34 @@
 import React from "react";
-import { Typography, ListItem } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import SkillsCard from "./SkillsCard";
+import { Typography } from "@mui/material";
 
 export default function Skills() {
-  const frontEndData = [
-    "HTML5",
-    "CSS3",
-    "Javascript",
-    "React",
-    "Material UI",
-    "SASS",
-    "Bootstrap",
-    "jQuery",
-  ];
-  const backEndData = [
-    "NodeJS",
-    "Express",
-    "PostgreSQL",
-    "Ruby",
-    "Ruby on Rails",
-  ];
-  const testingData = ["Storybook", "Mocha & Chai", "Jest"];
-  const toolsData = ["VS Code", "Git"];
+  const frontEndData = {
+    title: "Front End",
+    languages: [
+      "HTML5",
+      "CSS3",
+      "Javascript",
+      "React",
+      "Material UI",
+      "SASS",
+      "Bootstrap",
+      "jQuery",
+    ],
+  };
+  const backEndData = {
+    title: "Back End",
+    languages: ["NodeJS", "Express", "PostgreSQL", "Ruby", "Ruby on Rails"],
+  };
+  const testingData = {
+    title: "Testing",
+    languages: ["Storybook", "Mocha & Chai", "Jest"],
+  };
+  const toolsData = {
+    title: "Tools",
+    languages: ["VS Code", "Git"],
+  };
 
   return (
     <Grid2
@@ -32,45 +39,13 @@ export default function Skills() {
       pb={70}
       id="Skills"
     >
-      <Grid2 container={true} direction={"column"} justifyContent={"center"}>
-        <Typography variant="h4">Front End</Typography>
-        {frontEndData.map((item, index) => (
-          <div key={index}>
-            <ListItem>
-              <Typography>{item}</Typography>
-            </ListItem>
-          </div>
-        ))}
-      </Grid2>
-      <Grid2 container={true} direction={"column"}>
-        <Typography variant="h4">Back End</Typography>
-        {backEndData.map((item, index) => (
-          <div key={index}>
-            <ListItem>
-              <Typography>{item}</Typography>
-            </ListItem>
-          </div>
-        ))}
-      </Grid2>
-      <Grid2 container={true} direction={"column"}>
-        <Typography variant="h4">Testing</Typography>
-        {testingData.map((item, index) => (
-          <div key={index}>
-            <ListItem>
-              <Typography>{item}</Typography>
-            </ListItem>
-          </div>
-        ))}
-      </Grid2>
-      <Grid2 container={true} direction={"column"}>
-        <Typography variant="h4">Tools</Typography>
-        {toolsData.map((item, index) => (
-          <div key={index}>
-            <ListItem>
-              <Typography>{item}</Typography>
-            </ListItem>
-          </div>
-        ))}
+      <Typography variant="h1">Skills</Typography>
+      <Grid2 container={true} width={1500} direction={"row"}
+      >
+        <SkillsCard data={frontEndData.languages} title={frontEndData.title} />
+        <SkillsCard data={backEndData.languages} title={backEndData.title} />
+        <SkillsCard data={testingData.languages} title={testingData.title} />
+        <SkillsCard data={toolsData.languages} title={toolsData.title} />
       </Grid2>
     </Grid2>
   );
