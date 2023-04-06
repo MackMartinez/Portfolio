@@ -5,13 +5,13 @@ import CardContent from '@mui/material/CardContent';
 
 function SkillsCard(props) {
   return (
-    <Card sx={{ width: 450, height: 500, mb: 10, marginRight: 7}}>
+    <Card sx={{ width: 450, height: 500, mb: 10, marginRight: 7, backgroundColor: "#264653"}}>
       <CardContent>
-        <Typography variant="h4">{props.title}</Typography>
+        <Typography variant="h3" color="#2A9D8F">{props.title}</Typography>
         {props.data.map((item, index) => (
           <div key={index}>
             <ListItem>
-              <Typography>{item}</Typography>
+              <Typography variant="h5" color="#2A9D8F">{item}</Typography>
             </ListItem>
           </div>
         ))}
