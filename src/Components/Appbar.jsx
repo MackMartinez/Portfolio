@@ -67,7 +67,7 @@ export default function DrawerAppBar(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            [Insert icon]
+            
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {navItems.map((item) => (
