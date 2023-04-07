@@ -36,12 +36,12 @@ export default function Skills() {
       direction={"row"}
       justifyContent={"space-between"}
       pt={20}
-      
       id="Skills"
     >
-      <Typography variant="h1" color="#264653">Skills</Typography>
-      <Grid2 container={true} width={1500} direction={"row"}
-      >
+      <Typography variant="h1" color="#264653">
+        Skills
+      </Typography>
+      <Grid2 container={true} width={1500} direction={"row"}>
         <SkillsCard data={frontEndData.languages} title={frontEndData.title} />
         <SkillsCard data={backEndData.languages} title={backEndData.title} />
         <SkillsCard data={testingData.languages} title={testingData.title} />
