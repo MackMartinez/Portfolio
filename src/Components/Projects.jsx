@@ -43,7 +43,7 @@ const Projects = () => {
       pt={40}
       pb={30}
     >
-      <Typography variant="h1">PROJECTS</Typography>
+      <Typography variant="h1" color="white">PROJECTS</Typography>
       <Grid2 container={true} width={1500} direction={"row"}>
       {projectData.map((item, index) => (
         <FadeInOnScroll componentToFade={<Card

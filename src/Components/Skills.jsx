@@ -6,7 +6,7 @@ import FadeInOnScroll from "../HOC/FadeInOnScroll";
 
 export default function Skills() {
   const frontEndData = {
-    title: "Front End",
+    title: "FRONT END",
     languages: [
       "HTML5",
       "CSS3",
@@ -19,15 +19,15 @@ export default function Skills() {
     ],
   };
   const backEndData = {
-    title: "Back End",
+    title: "BACK END",
     languages: ["NodeJS", "Express", "PostgreSQL", "Ruby", "Ruby on Rails"],
   };
   const testingData = {
-    title: "Testing",
+    title: "TESTING",
     languages: ["Storybook", "Mocha & Chai", "Jest"],
   };
   const toolsData = {
-    title: "Tools",
+    title: "TOOLS",
     languages: ["VS Code", "Git"],
   };
 
@@ -39,8 +39,8 @@ export default function Skills() {
       pt={20}
       id="Skills"
     >
-      <Typography variant="h1" color="#264653">
-        Skills
+      <Typography variant="h1" color="white">
+        SKILLS
       </Typography>
       <Grid2 container={true} width={1500} direction={"row"}>
         <FadeInOnScroll
