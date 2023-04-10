@@ -62,7 +62,7 @@ function App() {
             backgroundColor="#edf2f4"
           >
             <Skills/>
-            <FadeInOnScroll componentToFade={<Projects/>} />
+            <Projects/>
             <FadeInOnScroll componentToFade={<ContactMe/>} />
           </Grid>
         </BrowserRouter>

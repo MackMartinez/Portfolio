@@ -1,6 +1,6 @@
 import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-
+import FadeInOnScroll from "../HOC/FadeInOnScroll";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -46,43 +46,44 @@ const Projects = () => {
       <Typography variant="h1">PROJECTS</Typography>
       <Grid2 container={true} width={1500} direction={"row"}>
       {projectData.map((item, index) => (
-        <Card
-        key={index}
-        sx={{
-          maxWidth: 600,
-          maxHeight: 450,
-          mb: 10,
-          mr: 7, 
-          minHeight: 600,
-          transform: "scale(1)",
-          transition: "transform 0.3s ease-in-out",
-          "&:hover": {
-            transform: "scale(1.2)",
-            },
-          }}
-          >
-          <CardMedia
-            component="img"
-            alt={item.img}
-            height="400"
-            src={item.img}
-            />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {item.name}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {item.description}
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <a href={item.github} target="_blank" rel="noopener noreferrer">
-              <Button size="small">
-                <GitHubIcon />
-              </Button>
-            </a>
-          </CardActions>
-        </Card>
+        <FadeInOnScroll componentToFade={<Card
+          key={index}
+          sx={{
+            maxWidth: 600,
+            maxHeight: 450,
+            mb: 10,
+            mr: 7, 
+            minHeight: 600,
+            transform: "scale(1)",
+            transition: "transform 0.3s ease-in-out",
+            "&:hover": {
+              transform: "scale(1.2)",
+              },
+            }}
+            >
+            <CardMedia
+              component="img"
+              alt={item.img}
+              height="400"
+              src={item.img}
+              />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {item.name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {item.description}
+              </Typography>
+            </CardContent>
+            <CardActions>
+              <a href={item.github} target="_blank" rel="noopener noreferrer">
+                <Button size="small">
+                  <GitHubIcon />
+                </Button>
+              </a>
+            </CardActions>
+          </Card>} />
+        
       ))}
       </Grid2>
     </Grid2>
