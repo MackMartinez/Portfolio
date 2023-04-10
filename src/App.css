@@ -41,3 +41,12 @@
     transform: rotate(360deg);
   }
 }
+
+.fade-in-on-scroll {
+  opacity: 0;
+  transition: opacity 1.3s ease-in-out;
+}
+
+.fade-in-on-scroll.is-visible {
+  opacity: 1;
+}

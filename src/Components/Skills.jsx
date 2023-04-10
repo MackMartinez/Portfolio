@@ -42,10 +42,12 @@ export default function Skills() {
         Skills
       </Typography>
       <Grid2 container={true} width={1500} direction={"row"}>
+        {/* <FadeInOnScroll> */}
         <SkillsCard data={frontEndData.languages} title={frontEndData.title} />
         <SkillsCard data={backEndData.languages} title={backEndData.title} />
         <SkillsCard data={testingData.languages} title={testingData.title} />
         <SkillsCard data={toolsData.languages} title={toolsData.title} />
+        {/* </FadeInOnScroll> */}
       </Grid2>
     </Grid2>
   );

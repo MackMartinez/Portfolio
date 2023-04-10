@@ -8,6 +8,7 @@ import ContactMe from "./Components/ContactMe";
 import Skills from "./Components/Skills";
 import { BrowserRouter } from "react-router-dom";
 import { useState, useEffect } from "react";
+import FadeInOnScroll from "./HOC/FadeInOnScroll";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div height={500} >
+    <div height={500}>
       {(loading && (
         <Box
           mt={65}
@@ -30,7 +31,6 @@ function App() {
             justifyContent: "center",
             flexDirection: "column",
             alignContent: "center",
-            
           }}
         >
           <CircularProgress size={120} />
@@ -51,6 +51,8 @@ function App() {
               <Landing />
             </Container>
           </Box>
+            <FadeInOnScroll>
+            </FadeInOnScroll>
           <Grid
             container={true}
             direction={"column"}
@@ -59,9 +61,9 @@ function App() {
             pr={40}
             backgroundColor="#edf2f4"
           >
-            <Skills />
-            <Projects />
-            <ContactMe />
+            <FadeInOnScroll componentToFade={<Skills/>} />
+            <FadeInOnScroll componentToFade={<Projects/>} />
+            <FadeInOnScroll componentToFade={<ContactMe/>} />
           </Grid>
         </BrowserRouter>
       )}
