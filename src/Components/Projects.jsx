@@ -49,15 +49,16 @@ const Projects = () => {
         <FadeInOnScroll componentToFade={<Card
           key={index}
           sx={{
-            maxWidth: 600,
+            maxWidth: 550,
             maxHeight: 450,
             mb: 10,
             mr: 7, 
             minHeight: 600,
+            borderRadius: 10,
             transform: "scale(1)",
             transition: "transform 0.3s ease-in-out",
             "&:hover": {
-              transform: "scale(1.2)",
+              transform: "scale(1.1)",
               },
             }}
             >

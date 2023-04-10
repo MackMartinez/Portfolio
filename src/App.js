@@ -21,18 +21,18 @@ function App() {
   }, []);
 
   return (
-    <div height={500}>
-      {(loading && (
-        <Box
-          mt={65}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            flexDirection: "column",
-            alignContent: "center",
-          }}
-        >
+    <>
+    {(loading && (
+      <Box
+      mt={65}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignContent: "center",
+      }}
+      >
           <CircularProgress size={120} />
         </Box>
       )) || (
@@ -40,12 +40,12 @@ function App() {
           <Box
             sx={{
               backgroundImage:
-                "url(https://github.com/MackMartinez/Portfolio/blob/main/src/Images/DevBGLanding.jpg?raw=true)",
+              "url(https://github.com/MackMartinez/Portfolio/blob/main/src/Images/DevBGLanding.jpg?raw=true)",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
             }}
-          >
+            >
             <DrawerAppBar />
             <Container maxWidth="md" sx={{ marginLeft: 50 }}>
               <Landing />
@@ -60,15 +60,15 @@ function App() {
             pl={40}
             pr={40}
             backgroundColor="#edf2f4"
-          >
+            >
             <Skills/>
             <Projects/>
             <FadeInOnScroll componentToFade={<ContactMe/>} />
           </Grid>
         </BrowserRouter>
       )}
-      ;
-    </div>
+      
+      </>
   );
 }
 
