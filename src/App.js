@@ -61,7 +61,7 @@ function App() {
             pr={40}
             backgroundColor="#edf2f4"
           >
-            <FadeInOnScroll componentToFade={<Skills/>} />
+            <Skills/>
             <FadeInOnScroll componentToFade={<Projects/>} />
             <FadeInOnScroll componentToFade={<ContactMe/>} />
           </Grid>

@@ -2,6 +2,7 @@ import React from "react";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import SkillsCard from "./SkillsCard";
 import { Typography } from "@mui/material";
+import FadeInOnScroll from "../HOC/FadeInOnScroll";
 
 export default function Skills() {
   const frontEndData = {
@@ -42,12 +43,35 @@ export default function Skills() {
         Skills
       </Typography>
       <Grid2 container={true} width={1500} direction={"row"}>
-        {/* <FadeInOnScroll> */}
-        <SkillsCard data={frontEndData.languages} title={frontEndData.title} />
-        <SkillsCard data={backEndData.languages} title={backEndData.title} />
-        <SkillsCard data={testingData.languages} title={testingData.title} />
-        <SkillsCard data={toolsData.languages} title={toolsData.title} />
-        {/* </FadeInOnScroll> */}
+        <FadeInOnScroll
+          componentToFade={
+            <SkillsCard
+              data={frontEndData.languages}
+              title={frontEndData.title}
+            />
+          }
+        />
+        <FadeInOnScroll
+          componentToFade={
+            <SkillsCard
+              data={backEndData.languages}
+              title={backEndData.title}
+            />
+          }
+        />
+        <FadeInOnScroll
+          componentToFade={
+            <SkillsCard
+              data={testingData.languages}
+              title={testingData.title}
+            />
+          }
+        />
+        <FadeInOnScroll
+          componentToFade={
+            <SkillsCard data={toolsData.languages} title={toolsData.title} />
+          }
+        />
       </Grid2>
     </Grid2>
   );
