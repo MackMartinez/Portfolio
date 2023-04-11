@@ -59,7 +59,7 @@ function App() {
             justifyContent={"center"}
             pl={40}
             pr={40}
-            backgroundColor="#264653"
+            backgroundColor="#181818"
             >
             <Skills/>
             <Projects/>
