@@ -39,10 +39,16 @@ export default function Skills() {
       pt={20}
       id="Skills"
     >
+      <Grid2 container={true} width={1500} direction={"Column"}>
+
       <Typography variant="h1" color="white" style={{ fontFamily: 'Arial', fontWeight: 'bold'}}>
         SKILLS
       </Typography>
-      <Grid2 container={true} width={1500} direction={"row"}>
+      <Typography variant="h5" color="grey" style={{ fontFamily: 'Arial'}}>
+        DEVELOPMENT ARSENAL
+      </Typography>
+      </Grid2>
+      <Grid2 container={true} width={2100} direction={"row"}>
         <FadeInOnScroll
           componentToFade={
             <SkillsCard

@@ -22,7 +22,7 @@ const Landing = () => {
         Macky Martinez
       </Typography>
       <TypeWriterEffect
-        textStyle={{ fontFamily: "roboto", color: "#2a9d8f" }}
+        textStyle={{ fontFamily: "Lobster", color: "white" }}
         startDelay={200}
         cursorColor="#2a9d8f"
         multiText={[

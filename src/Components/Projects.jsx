@@ -16,7 +16,7 @@ const Projects = () => {
       img: "https://github.com/MackMartinez/Portfolio/blob/main/src/Images/HabtrackLanding.jpg?raw=true",
       github: "https://github.com/MackMartinez/HabitTracker",
       description:
-        "A habit tracking application that helps you monitor your progress towards developinga nd mainting positive habits. This was a collaborative full stack project with full CRUD capabilities. ",
+        "A habit tracking application that helps you monitor your progress towards developing and mainting positive habits. This was a collaborative full stack project with full CRUD capabilities. ",
     },
     {
       name: "Jungle",
