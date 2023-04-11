@@ -39,7 +39,7 @@ export default function Skills() {
       pt={20}
       id="Skills"
     >
-      <Typography variant="h1" color="white">
+      <Typography variant="h1" color="white" style={{ fontFamily: 'Arial', fontWeight: 'bold'}}>
         SKILLS
       </Typography>
       <Grid2 container={true} width={1500} direction={"row"}>
